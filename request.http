@@ -1,0 +1,39 @@
+GET http://localhost:3000/birds
+
+
+###
+
+POST http://localhost:3000/birds
+content-type: application/json
+
+{
+    "species": "Arctic Loon",
+    "notes": "The Old World, counterpart to our Pacific Loon entering North America mainly as an uncommon summer resident in far western Alaska.",
+    "estimatedAmount": 5
+}
+
+
+###
+
+POST http://localhost:3000/birds
+content-type: application/json
+
+{
+    "species": "Black-footed albatross",
+    "notes": "The black-footed albatross is a large seabird of the albatross family Diomedeidae from the North Pacific",
+    "estimatedAmount": 2
+}
+
+###
+
+
+POST http://localhost:3000/birds
+content-type: application/json
+////error example
+{
+    "species": "Masked Booby ",
+    "notes": "The masked booby Sula dactylatra also called the masked gannet or the blue-faced booby is a large seabird of the booby and gannet family Sulidae",
+    "estimatedAmount": "Chico loco"
+}
+
+
